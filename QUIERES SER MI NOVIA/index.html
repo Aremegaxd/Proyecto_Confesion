@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>♥Te dedico una musica♥</title>
+    <style>
+        .body {
+            background-color: brown;
+            text-align: center;
+        }
+
+        .body__title {
+            color: aliceblue;
+        }
+
+        .body__img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="body">
+    <h1 class="body__title">♥te dedico una musica?♥(responde mas abajo)</h1>
+    <img src="https://scontent.flim41-1.fna.fbcdn.net/v/t1.15752-9/422002537_918668779989142_7083574941507579260_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeEP3XSgexd7xB1WsjlCFsRXpfGzMCUUH9Kl8bMwJRQf0p0eNEqEpVw19Hg4q14Q-6MSDC_RGanAo2gQVN8asnJC&_nc_ohc=zgZXHugxAJgAX9bseY5&_nc_ht=scontent.flim41-1.fna&oh=03_AdTSTdRozjbdr5VOlnVWbGAIIbzKxc_V-l1xH0DAp8-JTA&oe=65DD33E4" 
+    alt="foto de my"/>
+
+    <button id="yes">😄si quiero escucharla😄</button>
+    <button id="no">😧nell prro😧</button>
+
+    <script>
+        const vutonSi = document.getElementById('yes');
+        const vutonNo = document.getElementById('no');
+
+        const zomosNobios = () => {
+            alert('gracias por decir que si espero te guste preciosa');
+            alert('aunque creo que si te gusta, porque se te encanta esa musica c:');
+            location.href ='https://www.youtube.com/watch?v=5RRKzS6RmyU';
+
+        };
+        const ebitarkcrompamybobo = () => {
+            vutonNo.style.position = 'absolute';
+            vutonNo.style.top = (Math.random() * window.innerHeight) + 'px';
+            vutonNo.style.left = (Math.random() * window.innerHeight) + 'px';
+
+        };
+        
+        vutonSi.addEventListener('click' , zomosNobios);
+        vutonNo.addEventListener('mouseover', ebitarkcrompamybobo);
+
+    </script>
+    
+</body>
+</html>
